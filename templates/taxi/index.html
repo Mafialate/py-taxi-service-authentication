@@ -11,5 +11,5 @@
     <li><strong>Manufacturers:</strong> {{ num_manufacturers }}</li>
   </ul>
   <br>
-  <p>You have visited this page <strong>{{ num_visits }}</strong> {% if num_visits|pluralize %} times {% else %} time {% endif %}</p>
+  <p>You have visited this page <strong>{{ num_visits }}</strong> time{{ num_visits|pluralize }}</p>
 {% endblock %}
